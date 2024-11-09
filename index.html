@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body style="font-family:sans-serif;">
+    <script>
+        console.log('Hola Mundo');
+    </script>
+    <form>
+        <h2>
+            Formulario de Contacto
+        </h2>
+        
+        <!--Simple inputs-->
+        <div class="form_input">
+            <label>Nombre Completo
+            <input title="Tu nombre" required type="text" placeholder="John Doe"></input>
+            </label>
+        </div>
+        
+        <div class="form_input class_bottom">
+            <label>Email
+            <input title="Tu email" required type="email" placeholder="Tugmail@gmail.com"> </input>
+            </label> 
+            
+        <!--Select & Option-->
+        <div class="form_input">
+            
+            <label class="form_select">Tipo de usuario
+            <select class="class_option" name="type-of-user">
+                <option value="user1">Seguidor/a</option>
+                <option value="user2">Empresa</option>
+                <option value="user3">Otros</option>
+            </select>
+            </label>
+
+        </div>    
+        
+
+        <!--Datalist & Option-->
+            <div class="form_input">
+            
+            <label class="form_select">Referente
+            <input placeholder="Tu Referente" name="referente" class="form_input form_input2" list="referente">
+            <datalist  id="referente" name="type-of-user"> 
+                <option  value="Salvador">Un desarrolador web</option>
+                <option value="Una Empresa">Microsoft</option>
+                <option value="Un Amigo">Pedro</option>
+            </datalist>
+            </label>
+
+        </div>    
+
+        </div>
+        
+        <!--TextArea-->
+        <div class="form_input">
+            
+            <label>Mensaje
+            <textarea title="Tu mensaje" rows="8" required maxlength="700" minlength="30"  placeholder="Dejá tu mensaje..."></textarea>
+            </label>
+        </div>
+        
+
+        <div>
+            <label class="form_input"><strong>Acepto los Terminos y Condiciones</strong>
+                <input class="checkbox" type="checkbox">
+            </label>
+        </div>
+
+
+    </form>
+
+</body>
+</html>
